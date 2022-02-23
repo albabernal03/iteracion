@@ -1,4 +1,3 @@
-Algoritmo descomponer
 
 import tabulate
 def descomposicion():
