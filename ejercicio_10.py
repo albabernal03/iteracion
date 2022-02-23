@@ -30,8 +30,11 @@ class información:
       if padres == 3 and edad <= 15:
         print('...................')
         print('NOMBRE         ESTADO')
-        print(self.nombre,    self.padres)
-    
+        print(self.nombre, self.padres)
+        
+    def identidad_padre_jaime(self):
+      if self.identidad = "Jaime MARTIN"return self.padre
+
         
 
 
