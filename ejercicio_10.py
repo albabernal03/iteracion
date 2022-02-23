@@ -7,7 +7,4 @@ class información:
         self.nombre= nombre
         self.edad = edad 
         self.padres = padres 
-
-    def comparación_edad (self):
-        if 20 < self.edad < 30: 
-            print(nombre)
+    
