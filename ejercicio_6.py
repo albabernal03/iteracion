@@ -19,9 +19,24 @@ class palabra:
         else:
             pass
     
-    def ordenar_alfabéticamente (self):
-        palabras.sort()
-        print(palabras)
+    def ordenar_alfabéticamente ():
+      palabras.sort()
+      print(palabras)
+      
+    def eliminar_palabra():
+      eliminar = str(input('Introduce la palabra que desea eliminar:'))
+      palabras.remove(eliminar)
+      print(palabras)
+
+      
+    def añadir_palabra():
+      añadir = str(input('Introduzca la palabra que desea añadir'))
+      palabras.append(añadir)
+      print(palabras)
+      
+      
+    
+    
         
 
        
