@@ -92,7 +92,7 @@ class palabra:
 
 ## Ejercicio 12:<a name="id7"></a>
 
-´´´
+```
 from math import sqrt
 
 def calcular_cuadrados_perf(n):
@@ -115,4 +115,6 @@ def calcular_cuadrados_perf(n):
 if __name__ == "__main__":
 
   n = int(input("Introduzca un numero entero: "))
-  calcular_cuadrados_perf(n)´´´
+  calcular_cuadrados_perf(n)
+  
+  ```
