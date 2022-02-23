@@ -3,7 +3,7 @@ Entrada
 
 def euclides_mcd(n, m)
 
-  while (control == True):
+while control = True:
     if (n == m):
       control = False
     k = abs(n-m)

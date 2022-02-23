@@ -9,5 +9,5 @@ class información:
         self.padres = padres 
     def rango_edad (self):
       if 20 < self.edad < 30:
-        print()
+        print(self.nombre)
     

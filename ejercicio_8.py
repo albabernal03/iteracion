@@ -1,4 +1,3 @@
-
 import tabulate
 def descomposicion():
     caden = cadena.split(separador)
