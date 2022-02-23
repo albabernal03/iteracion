@@ -1,11 +1,9 @@
-def convertir_entero_base(numero, base):
-  conversion_cadena = '0123456789ABCDEF'
+resultado []
+print("Escoge el número que desees editar")
+numero=int(input())
+print("Escoge la base en la que quieras converit el número elegido")
+base=int(input())
 
-  if numero < base:
-    return conversion_cadena[numero]
-  else:
-    return convertir_entero_base(numero, base)
-numero =
-base = 
-resultado = convertir_entero_base(numero, base)
-print(resultado)
+def entero_cambiar_base(numero,base):
+  if base > 36:
+    print(numero)

@@ -17,6 +17,19 @@ class información:
       if 20 < self.edad < 30:
         print('...................')
         print('NOMBRE         EDAD')
-        print(nombre, 'ee 
+        print(nombre,          edad)
+    def estado_padres (self):
+      if padres == 1 or 2:
+        print ('Tiene los dos o alguno de los padres ')
+      if padres == 3:
+        print('Es huérfano')
+        print('...................')
+        print('NOMBRE         ESTADO')
+        print(nombre,          padres)
+      if padres == 3 and edad <= 15:
+        print('...................')
+        print('NOMBRE         ESTADO')
+        print(nombre,          PADRE)
+        
 
 
