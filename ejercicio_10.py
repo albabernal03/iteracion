@@ -15,9 +15,10 @@ class información:
         self.padres = padres 
     def rango_edad (self):
       if 20 < self.edad < 30:
+        self.edad = edad + 1
         print('...................')
         print('NOMBRE         EDAD')
-        print(nombre,          edad)
+        print(self.nombre,   self.edad)
     def estado_padres (self):
       if padres == 1 or 2:
         print ('Tiene los dos o alguno de los padres ')
@@ -25,11 +26,12 @@ class información:
         print('Es huérfano')
         print('...................')
         print('NOMBRE         ESTADO')
-        print(nombre,          padres)
+        print(self.nombre, self.padres)
       if padres == 3 and edad <= 15:
         print('...................')
         print('NOMBRE         ESTADO')
-        print(nombre,          PADRE)
+        print(self.nombre,    self.padres)
+    
         
 
 
