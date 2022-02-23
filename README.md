@@ -23,51 +23,71 @@ En esta tarea resolvemos una serie de ejercicios en el que empleamos funciones.
 ***
 
 ## Ejercicio 6:<a name="id1"></a>
+```
+cuenta = str(input("¿Quiere abrir una cuenta en el banco?: "))
+saldo = 0
+d = []
+
+class banco:
+  
+  def __init__(self, cuenta, saldo):
+    self.cuenta = cuenta
+    self.saldo = saldo
+  
+  def respuesta(self):
+    if self.cuenta == "no":
+      print("De acuerdo, gracias")
+    if self.cuenta == "si":
+      self.saldo = 0
+      abono = float(input("Introduce el dinero que desea ingresar: "))
+      self.saldo = abono
+      print("Su cuenta se ha abierto correctamente")
+      print("Su saldo es:", self.saldo, "€")
+  
+  def accion(self):
+    act = str(input("¿Quiere ingresar, retirar, o consultar dinero?: "))
+    d.append(act)
+    if act == "ingresar":
+      ingreso = float(input("Introduce la cantidad que desea ingresar: "))
+      self.saldo = self.saldo + ingreso
+      print("Su saldo es ahora de: ", self.saldo, "€")
+
+    if act == "retirar":
+      retirada = float(input("Introduce la cantidad que desea retirar: "))
+      if self.saldo < retirada:
+        print("Error, no tiene suficiente saldo")
+      else: 
+        self.saldo = self.saldo - retirada
+        print("Su saldo es ahora de: ", self.saldo, "€")
+
+    if act == "consultar":
+      print("Su saldo es de:", self.saldo, "€")
+
+  def algo_mas(self):
+    pregunta = str(input("¿Quiere hacer alguna operación más?: "))
+    if pregunta == "si":
+      banco.accion(self)
+      banco.algo_mas(self)
+    if pregunta == "no":
+      print("Como usted quiera")
+
+  def historial(self):
+    hist = str(input("¿Quiere consultar su historial?: "))
+    if hist == "si":
+      for i in d:
+        print(i)
+    
+    
+
+cliente = banco(cuenta, saldo)
+print(cliente.respuesta())
+print(cliente.algo_mas())
+print(cliente.historial())
+
+
 
 ```
-nombres = []
-edades = []
-padress = []
-nombre = str(input('Introduzca su nombre y apellido:'))
-nombres.append(nombre)
-edad = int(input('Introduzca su edad:'))
-edades.append(edad)
-padres = int(input('Selecione (1) si tiene padres, (2) si solo madre o padre y (3) si no tiene:'))
-padress.append(padres)
 
-class información:
-    def __init__(self,nombre,edad,padres):
-        self.nombre= nombre
-        self.edad = edad 
-        self.padres = padres 
-    def rango_edad (self):
-      if 20 < self.edad < 30:
-        self.edad = edad + 1
-        print('...................')
-        print('NOMBRE         EDAD')
-        print(self.nombre,   self.edad)
-    def estado_padres (self):
-      if padres == 1 or 2:
-        print ('Tiene los dos o alguno de los padres ')
-      if padres == 3:
-        print('Es huérfano')
-        print('...................')
-        print('NOMBRE         ESTADO')
-        print(self.nombre, self.padres)
-      if padres == 3 and edad <= 15:
-        print('...................')
-        print('NOMBRE         ESTADO')
-        print(self.nombre, self.padres)
-        
-    def identidad_padre_jaime(self):
-      if self.identidad = "Jaime MARTIN"return self.padre
-
-        
-
-
-
-
-```
 ***
 
 ## Ejercicio 7:<a name="id2"></a>
@@ -125,7 +145,50 @@ class palabra:
 ***
 
 ## Ejercicio 10:<a name="id5"></a>
+```
+nombres = []
+edades = []
+padress = []
+nombre = str(input('Introduzca su nombre y apellido:'))
+nombres.append(nombre)
+edad = int(input('Introduzca su edad:'))
+edades.append(edad)
+padres = int(input('Selecione (1) si tiene padres, (2) si solo madre o padre y (3) si no tiene:'))
+padress.append(padres)
 
+class información:
+    def __init__(self,nombre,edad,padres):
+        self.nombre= nombre
+        self.edad = edad 
+        self.padres = padres 
+    def rango_edad (self):
+      if 20 < self.edad < 30:
+        self.edad = edad + 1
+        print('...................')
+        print('NOMBRE         EDAD')
+        print(self.nombre,   self.edad)
+    def estado_padres (self):
+      if padres == 1 or 2:
+        print ('Tiene los dos o alguno de los padres ')
+      if padres == 3:
+        print('Es huérfano')
+        print('...................')
+        print('NOMBRE         ESTADO')
+        print(self.nombre, self.padres)
+      if padres == 3 and edad <= 15:
+        print('...................')
+        print('NOMBRE         ESTADO')
+        print(self.nombre, self.padres)
+        
+    def identidad_padre_jaime(self):
+      if self.identidad = "Jaime MARTIN"return self.padre
+
+        
+
+
+
+
+```
 
 ***
 
